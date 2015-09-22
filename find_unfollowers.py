@@ -1,7 +1,7 @@
 import api
 import json
 
-user_friends = api.api.GetFriends()
+user_friends = api.api.GetFollowers()
 
 friends = [u.name for u in user_friends];
 
