@@ -2,3 +2,5 @@ credentials.py
 credentials.pyc
 env/
 friends.txt
+friends_temp.txt
+*.pyc
