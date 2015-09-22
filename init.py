@@ -8,7 +8,8 @@ api = twitter.Api(consumer_key=credentials.twitter['consumer_key'],
                   access_token_secret=credentials.twitter['access_token_secret'])
 
 user_friends = api.GetFriends()
-print(user_friends)
 
-with open('user_friends.txt', 'w') as json_file:
-    json.dump(user_friends, json_file)
+friends = [u.name for u in user_friends];
+
+with open('friends.txt', 'w') as json_file:
+    json.dump(friends, json_file)
